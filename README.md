@@ -190,7 +190,7 @@ The fitted decision tree (max depth 2) splits first on standardized `age`, then 
 
 ---
 
-# Model Interpretation
+# Demonstration & Applications
 
 The notebooks demonstrate how interpretable classifiers can be compared head-to-head when the feature space is small enough to visualize.
 
