@@ -75,7 +75,7 @@ These are binary and multiclass classification problems.
 
 # Exploratory Data Analysis (EDA)
 
-### Key Insights
+### Key Findings
 - Cholesterol and age separate the heart-disease classes reasonably well even before modeling
 - Class `0` (asymptomatic) dominates the chest-pain distribution, which biases simple classifiers
 - The two-feature setup makes the heart-disease decision boundary visually inspectable
