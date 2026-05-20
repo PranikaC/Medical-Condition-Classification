@@ -26,11 +26,11 @@ The projects are educational analyses and should not be used for clinical decisi
 ```mermaid
 %%{init: {"theme": "default", "themeVariables": {"fontSize": "11px"}, "flowchart": {"nodeSpacing": 25, "rankSpacing": 30}}}%%
 flowchart TD
-    A[Heart-Disease & Chest-Pain Datasets] --> B[Data Cleaning]
-    B --> C[Feature Selection]
+    A[Heart-Disease & Chest-Pain CSVs] --> B[Feature Selection]
+    B --> C[Train/Test Split where applicable]
     C --> D[Train Multiple Classifiers]
     D --> E[Boundary & Tree Visualization]
-    E --> F[Threshold & Accuracy Reporting]
+    E --> F[Threshold, Accuracy, F1, ROC-AUC]
     F --> G[Side-by-Side Model Comparison]
 ```
 
@@ -160,7 +160,7 @@ Each linear classifier draws a straight line in the age-cholesterol plane that s
 
 The fitted decision tree (max depth 2) splits first on standardized `age`, then on `age` again on the younger branch and on `chol` on the older branch. Color intensity encodes class purity — the darker right-side leaf (128 samples, gini 0.604) collects mostly class-0 cases, while a small darker-blue leaf isolates a near-pure class-2 region.
 
-<img src="chest-pain-decision-tree.png" alt="Chest pain decision tree" width="500">
+<img src="images/chest-pain-decision-tree.png" alt="Chest pain decision tree" width="500">
 
 ### Combined Results Snapshot
 
