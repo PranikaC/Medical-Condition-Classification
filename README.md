@@ -148,7 +148,7 @@ flowchart LR
 
 Each linear classifier draws a straight line in the age-cholesterol plane that splits "no disease" (red) from "disease" (green). Logistic regression and LDA produce nearly identical boundaries — both pass through roughly the same point near age 60 — while the SVC with `C=1` chooses a flatter slope, which is why its threshold at age 55 sits about 55 mg/dL below the other two.
 
-<img src="images/heart-decision-boundaries.png" alt="Heart disease decision boundaries" width="500">
+<img src="heart-decision-boundaries.png" alt="Heart disease decision boundaries" width="500">
 
 | Model | Cholesterol Threshold at Age 55 (mg/dL) |
 | --- | ---: |
@@ -160,7 +160,7 @@ Each linear classifier draws a straight line in the age-cholesterol plane that s
 
 The fitted decision tree (max depth 2) splits first on standardized `age`, then on `age` again on the younger branch and on `chol` on the older branch. Color intensity encodes class purity — the darker right-side leaf (128 samples, gini 0.604) collects mostly class-0 cases, while a small darker-blue leaf isolates a near-pure class-2 region.
 
-<img src="images/chest-pain-decision-tree.png" alt="Chest pain decision tree" width="500">
+<img src="chest-pain-decision-tree.png" alt="Chest pain decision tree" width="500">
 
 ### Combined Results Snapshot
 
